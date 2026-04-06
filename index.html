@@ -11,21 +11,26 @@
 <p id="sample"></p>
 
     <script>
+        let Sample= "";
+
+        for (let x = 0; x < 3; x++) {
+        Sample += "The number is " + x + "<br>";
+        }
+
+        document.getElementById("sample").innerHTML = Sample;
+    </script>
+
+<h2>Javascript While Loop</h2>
+<p id="sample2"></p>
+
+<script>
         let Sample2= "";
         let y = 0;
-        
         while (y < 5) {
         Sample2 += "<br>The number is " + y;
         y++;
         }
         document.getElementById("sample2").innerHTML = Sample2;
-        // let Sample= "";
-
-        // for (let x = 0; x < 3; x++) {
-        // Sample += "The number is " + x + "<br>";
-        // }
-
-        // document.getElementById("sample").innerHTML = Sample;
     </script>
     
 </body>
